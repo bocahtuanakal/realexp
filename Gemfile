@@ -7,7 +7,7 @@ gem 'bcrypt',               '3.1.7'
 gem 'bootstrap-sass',       '3.2.0.0'
 gem 'unicorn',        '4.8.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3',     '1.3.10'
+gem 'sqlite3',     '1.3.9'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,6 +30,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'byebug',      '3.4.0'  
 gem 'web-console', '2.0.0.beta3'  
+group :development do
+  gem 'taps'
+  gem 'rvm'
+end
 
 group :test do
   gem 'minitest-reporters', '1.0.5'
