@@ -7,7 +7,7 @@ gem 'bcrypt',               '3.1.7'
 gem 'bootstrap-sass',       '3.2.0.0'
 gem 'unicorn',        '4.8.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3',     '1.3.10'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -36,7 +36,10 @@ group :test do
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
 end
-
+group :production do
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
